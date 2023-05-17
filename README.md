@@ -10,4 +10,4 @@ Projeto educacional feito em Javascript. Conversor de um valor colocado pelo usu
 + Rublos Bielos (Bielorússia).
 
 Inclui uma seção que analisa se o valor convertido pode conferir boas oportunidades no país em questão!
-Para acessar o projeto, é só inicializar a página .html dentro da pasta HTML.
+Para acessar o projeto, é só inicializar a página .html.
