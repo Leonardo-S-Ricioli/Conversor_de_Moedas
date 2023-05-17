@@ -1,0 +1,7 @@
+.ebotoes {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-top: 10px;
+    align-items: center;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio.css">
+    <title>Conversor de moedas daora</title>
+</head>
+
+<body>
+
+
+    <h1> O melhor conversor para investimentos confiáveis</h1>
+    <div class="ebotoes">
+        <input type="number">;
+        <button  onclick="conversaoKwanza()" type="submit" class="kwanza">Converta o valor em Kwanzas angolanos</button>
+        <button type="submit" class="rubloB">Converta o valor em Rublos bielorussos</button>
+        <button type="submit" class="tugrik">Converta o valor em Tugriks mongóis</button>
+        <button type="submit" class="lek">Converta o valor em Leks albaneses</button>
+    </div>
+
+    <script>
+
+        var input = document.querySelector("input");
+        console.log(input);
+        function conversaoKwanza() {
+
+            var valorKw = (input.value * 100)
+
+            document.write("Você tem " + valorKw + " Kwanzas.")
+
+            if (valorKw >= 10000) {
+                document.write("Saldo suficiente para empreender no ramo de aluguel de Honda Bis em Angola! Continue com seu mindset esplêndido!")
+            }
+            else { document.write("Infelizmente você é pobre internacionalmente.") }
+        }
+
+        function conversaoRubloB() {
+
+            var valorRu = Math.round((input.value * 0.48));
+
+            document.write("Você tem " + valorRu + " Rublos Bielorussos.")
+
+            if (valorRu >= 1000) {
+                document.write("Saldo suficiente para empreeder no ramo de rinha de galo na Bielorússia! Continue com seu mindset diferenciado!")
+            }
+            else { document.write("Infelizmente você é pobre internacionalmente.") }
+        }
+
+        function conversaoTugrik() {
+
+            var valorTu = Math.round((input.value * 666.24))
+
+            document.write("Você tem " + valorTu + " Tugriks mongóis.")
+
+            if (valorTu >= 60000) {
+                document.write("Saldo suficiente para abrir sua paleteria mexicana na Mongólia, vai dar certo sim, pode confiar!")
+            }
+            else { document.write("Infelizmente você é pobre internacionalmente.") }
+        }
+
+        function conversaoLek() {
+
+            var valorLe = Math.round((input.value * 19.85));
+
+            document.write("Você tem " + valorLe + " Leks albaneses.")
+
+            if (valorLe >= 4000) {
+                document.write("Saldo suficiente para investir em agiotagem na Albânia! Prossiga com seu Mindset avançado!")
+            }
+            else { document.write("Infelizmente você é pobre internacionalmente.") }
+
+        }
+
+        var button = document.querySelector(".kwanza");
+        // button.onclick = conversaoKwanza;
+        var button = document.querySelector(".rubloB");
+        button.onclick = conversaoRubloB;
+        var button = document.querySelector(".tugrik");
+        button.onclick = conversaoTugrik;
+        var button = document.querySelector(".lek");
+        button.onclick = conversaoLek;
+    </script>
+
+
+</body>
+
+</html>
